@@ -52,6 +52,7 @@ const HeroSection = () => {
         <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/17/58760e8e-324f-479e-88fa-31800120ea38_Rolls1.png" />
         <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/1/24/05a939eb-fd4e-4308-b989-d1c54f4421b3_northindian1.png" />
         <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_cake.png" />
+        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Dosa.png" />
       </div>
     </div>
   );
@@ -59,16 +60,21 @@ const HeroSection = () => {
 
 const ResturantCard = (props) => {
   const { resData } = props;
+
+  if (!resData) return null; // safety guard
+
+  const { name, image, avgRating, timeToPrepare, cuisines, place, distance } =
+    resData;
   return (
     <div className="res-card">
       <img src={resData.image} />
-      <h3>{resData.name}</h3>{" "}
+      <h3>{name}</h3>{" "}
       <p className="rating">
-        <i className="fa fa-star star" aria-hidden="true"></i>{" "}
-        {resData.avgRating} • {resData.timeToPrepare}
+        <i className="fa fa-star star" aria-hidden="true"></i> {avgRating} •{" "}
+        {timeToPrepare}
       </p>
       <p>
-        {resData.cuisines.join(",")} | {resData.place}
+        {cuisines.join(",")} | {place}
       </p>
       <p>
         <i className="fa fa-map-marker map" aria-hidden="true"></i>{" "}
@@ -352,9 +358,9 @@ const Body = () => {
   return (
     <div className="body">
       <div className="search">
-        <h2>Discover best restaurants. Swiggy it!</h2>
+        <h2>Discover best restaurants. Check Food King!</h2>
         <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png" />
-        <input placeholder="Search for Restaurants, items or more"></input>{" "}
+        <input placeholder="Search for Restaurants, items or more  🔍"></input>
       </div>
       <img
         id="right"
@@ -468,24 +474,7 @@ const Body = () => {
           <p>Andhra Restaurant Near Me</p>
           <p>Sea Food Restaurant Near Me</p>
           <p>Bengali Restaurant Near Me</p>
-          <p>
-            Show More{" "}
-            <svg
-              width="20px"
-              height="20px"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6 9L12 15L18 9"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </p>
+          <p>Show More</p>
         </div>
       </div>
     </div>

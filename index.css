@@ -14,10 +14,9 @@ body {
   box-shadow: 0px 15px 15px -15px #111;
 }
 
-/* .logo {
-  width: 80px;
-  margin-top: -5px;
-} */
+.logo {
+  margin-left: 25px;
+}
 
 /* .logo-container .logo {
   margin-top: -5px;
@@ -108,7 +107,8 @@ button {
 .res-container {
   max-width: 800px;
   margin-left: 15%;
-  margin-top: 25px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .res-cards {
@@ -278,11 +278,6 @@ h4 {
   width: 250px;
 } */
 
-.res-container {
-  padding: 20px;
-  padding-bottom: 60px !important;
-}
-
 .heading {
   font-size: 20px;
   font-weight: 600;
@@ -293,11 +288,11 @@ h4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns */
   grid-template-rows: repeat(3, auto); /* 3 rows */
-  gap: 30px;
+  gap: 10px;
 }
 
 .restaurant p {
-  width: 240px;
+  width: 280px;
   padding-top: 18px;
   padding-bottom: 18px;
   border-radius: 12px;
@@ -313,6 +308,7 @@ h4 {
 
 .restaurant p:last-of-type {
   color: #ff5301;
+  border: 2px solid #ff5301;
 }
 
 path {
@@ -326,6 +322,8 @@ path {
   justify-content: center;
   align-items: center;
   background-color: #f0f0f5;
+  padding-top: 70px !important;
+  padding-bottom: 70px !important;
 }
 
 .footer p {
@@ -347,12 +345,12 @@ path {
 .dishes {
   display: flex;
   margin-left: 10%;
-  gap: 20;
+  gap: 10;
 }
 
 .dishes img {
   width: 145px;
-  height: 190px;
+  height: 180px;
 }
 
 .mobile-section {
@@ -360,7 +358,7 @@ path {
   height: 200px;
   background-color: #161a1e;
   padding-left: 12%;
-  padding-top: 4%;
+  padding-top: 6%;
   overflow-x: hidden !important;
 }
 
@@ -373,7 +371,7 @@ path {
 .mobile-section p {
   font-size: 20px;
   color: #8e8f93;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .footer {
@@ -488,4 +486,17 @@ hr {
   border: none;
   font-size: 14px;
   cursor: pointer;
+}
+
+.search h2 {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.brand .logo {
+  margin-right: 10px;
+}
+
+.copyright {
+  margin-left: 40px;
 }
