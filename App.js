@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { jsx } from "react/jsx-runtime";
+import Footer from "./components/Footer";
 
 // React.createElement => Object => HTMLElement(render)
 
@@ -77,15 +78,6 @@ const MobileSection = () => {
     <div className="mobile-section">
       <h2>Get the Swiggy App now!</h2>
       <p>For best offers and discounts curated specially for you.</p>
-    </div>
-  );
-};
-
-const Footer = () => {
-  return (
-    <div className="footer">
-      <p>For better experience,download the Swiggy app now</p> &nbsp; &nbsp;
-      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/m/play_store.png" />
     </div>
   );
 };

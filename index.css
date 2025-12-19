@@ -333,3 +333,113 @@ path {
   color: #8e8f93;
   margin-top: 10px;
 }
+
+.footer {
+  background-color: #f7f7f7;
+  padding: 40px 0px;
+  font-family: Arial, sans-serif;
+  color: #f0f0f5;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-brand .brand {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo {
+  font-size: 60px;
+}
+
+.brand-name {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 12px;
+  color: #fc8019;
+}
+
+.footer-brand p {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #000;
+  background: transparent;
+  margin-left: -10px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+
+.footer-column p:hover {
+  color: #fc8019;
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+.city-select {
+  margin-top: 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-icons span {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+hr {
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid #dcdcdc;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-bottom h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.store-btn {
+  background: #000;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
