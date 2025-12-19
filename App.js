@@ -64,14 +64,13 @@ const ResturantCard = (props) => {
       <img src={resData.image} />
       <h3>{resData.name}</h3>{" "}
       <p className="rating">
-        <i className="fa fa-star" aria-hidden="true"></i> {resData.avgRating}
+        <i className="fa fa-star star" aria-hidden="true"></i>{" "}
+        {resData.avgRating} • {resData.timeToPrepare}
       </p>
       <p>
         {resData.cuisines.join(",")} | {resData.place}
       </p>
       <p>
-        <i className="fa fa-clock-o time" aria-hidden="true"></i>{" "}
-        {resData.timeToPrepare} |{" "}
         <i className="fa fa-map-marker map" aria-hidden="true"></i>{" "}
         {resData.distance}
       </p>
