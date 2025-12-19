@@ -7,20 +7,20 @@ const Footer = () => {
         <div className="footer-brand">
           <div className="brand">
             <span className="logo">🍔</span>
-            <span className="brand-name">Swiggy</span>
+            <span className="brand-name">Food King</span>
           </div>
-          <p className="copyright">© 2025 Swiggy Limited</p>
+          <p className="copyright">© 2025 Food King Limited</p>
         </div>
 
         <div className="footer-column">
           <h4>Company</h4>
           <p>About Us</p>
-          <p>Swiggy Corporate</p>
+          <p>King Corporate</p>
           <p>Careers</p>
           <p>Team</p>
-          <p>Swiggy One</p>
-          <p>Swiggy Instamart</p>
-          <p>Swiggy Dineout</p>
+          <p>King One</p>
+          <p>King Instamart</p>
+          <p>King Dineout</p>
           <p>Minis</p>
           <p>Pyng</p>
         </div>
@@ -52,9 +52,9 @@ const Footer = () => {
         </div>
 
         <div className="footer-column">
-          <h4>Life at Swiggy</h4>
-          <p>Explore With Swiggy</p>
-          <p>Swiggy News</p>
+          <h4>Life at Food King</h4>
+          <p>Explore With Food King</p>
+          <p>Food King News</p>
           <p>Snackables</p>
 
           <h4 className="mt">Social Links</h4>

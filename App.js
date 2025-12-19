@@ -24,10 +24,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo-container">
-        <img
-          className="logo"
-          src="https://img.freepik.com/premium-vector/logo-food-company-that-says-sun-sun-sunflower_917213-253424.jpg?semt=ais_hybrid&w=740&q=80"
-        />
+        <span className="logo">🍔</span>
       </div>
       <div className="nav-items">
         <ul>
@@ -76,7 +73,7 @@ const ResturantCard = (props) => {
 const MobileSection = () => {
   return (
     <div className="mobile-section">
-      <h2>Get the Swiggy App now!</h2>
+      <h2>Get the Food King App now!</h2>
       <p>For best offers and discounts curated specially for you.</p>
     </div>
   );
