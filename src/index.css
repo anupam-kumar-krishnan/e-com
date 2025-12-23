@@ -115,9 +115,7 @@ button {
   display: flex;
   justify-content: space-between;
   width: 1200px;
-  height: 400px;
-  /* background-color: #fcd0bb; */
-  /* margin-left: -75px; */
+  height: 600px;
   flex-wrap: wrap;
   gap: 10;
   padding-left: -50px;
@@ -499,4 +497,26 @@ hr {
 
 .copyright {
   margin-left: 40px;
+}
+
+.filter {
+  margin-left: 9%;
+  margin-top: 2%;
+  margin-bottom: -2%;
+}
+
+.filter-btn {
+  border: 1.9px solid #ff5301;
+  font-size: 14px;
+  border-radius: 50px;
+  padding: 5px 15px !important;
+  font-weight: 500;
+  background: #ff5301;
+  color: #fff;
+}
+
+.filter-btn:hover {
+  color: #ff5301;
+  background-color: transparent;
+  cursor: pointer;
 }
