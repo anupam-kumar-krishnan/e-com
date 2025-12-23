@@ -5,13 +5,23 @@ const RestaurantCard = (props) => {
 
   const { name, image, avgRating, timeToPrepare, cuisines, place, distance } =
     resData;
+
+  const getRatingClass = (rating) => {
+    if (rating >= 3.6) return "green";
+    if (rating >= 2.5) return "yellow";
+    return "red";
+  };
+
   return (
     <div className="res-card">
       <img src={resData.image} />
       <h3>{name}</h3>{" "}
       <p className="rating">
-        <i className="fa fa-star star" aria-hidden="true"></i> {avgRating} •{" "}
-        {timeToPrepare}
+        <i
+          className={`fa fa-star star ${getRatingClass(avgRating)}`}
+          aria-hidden="true"
+        ></i>
+        &nbsp;{avgRating} • {timeToPrepare}
       </p>
       <p>
         {cuisines.join(",")} | {place}

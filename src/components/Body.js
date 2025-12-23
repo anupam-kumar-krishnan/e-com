@@ -2,11 +2,15 @@ import MobileSection from "./MobileSection";
 import HeroSection from "./HeroSection";
 import RestaurantCard from "./ResturantCard";
 import resObj from "../utils/mockData";
-import react, { useState } from "react";
+import react, { useEffect, useState } from "react";
 
 const Body = () => {
   // State Variable - Super Powerful Variable
   let [listofRestaurants, setListofRestaurants] = useState(resObj.restaurants);
+
+  useEffect(() => {
+    console.log("useEffect Called");
+  }, []);
 
   return (
     <div className="body">
@@ -118,6 +122,7 @@ const Body = () => {
           ))}
         </div>
       </div>
+      <hr className="divider" />
       <div className="res-container">
         <h3 className="heading">
           Restaurants with online food delivery in Pune

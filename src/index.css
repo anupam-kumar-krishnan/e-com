@@ -239,12 +239,23 @@ h4 {
 }
 
 .res-card .star {
-  background-color: #168b3f;
   width: fit-content;
   padding: 4px 4px;
   border-radius: 25px;
   color: white;
   font-size: 10px;
+}
+
+.star.green {
+  background-color: #168b3f;
+}
+
+.star.yellow {
+  background-color: #f5a623;
+}
+
+.star.red {
+  background-color: #d32f2f;
 }
 
 .res-card i {
@@ -519,4 +530,10 @@ hr {
   color: #ff5301;
   background-color: transparent;
   cursor: pointer;
+}
+
+.divider {
+  margin-left: 11%;
+  stroke-width: 15px;
+  width: 150%;
 }
