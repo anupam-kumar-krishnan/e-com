@@ -8,7 +8,7 @@ const resObj = {
       avgRating: 4.3,
       avgPrice: 300,
       distance: "2.5 km",
-      timeToPrepare: "25 mins",
+      timeToPrepare: "25-30 mins",
       place: "Hinjewadi",
       cuisines: ["Chicken"],
       menu: [
@@ -72,7 +72,7 @@ const resObj = {
       avgRating: 4.0,
       avgPrice: 350,
       distance: "3.1 km",
-      timeToPrepare: "30 mins",
+      timeToPrepare: "35-40 mins",
       place: "Thergaon",
       cuisines: ["Italian"],
       menu: [
@@ -136,7 +136,7 @@ const resObj = {
       avgRating: 3.5,
       avgPrice: 400,
       distance: "4.0 km",
-      timeToPrepare: "35 mins",
+      timeToPrepare: "35-40 mins",
       place: "Wakad",
       cuisines: ["Italian"],
       menu: [
@@ -200,9 +200,9 @@ const resObj = {
       avgRating: 2.5,
       avgPrice: 250,
       distance: "1.8 km",
-      timeToPrepare: "20 mins",
+      timeToPrepare: "20-25 mins",
       place: "Viman Nagar",
-      cuisines: ["Burgers"],
+      cuisines: ["Burgers", ", American"],
       menu: [
         {
           id: 401,
@@ -264,9 +264,9 @@ const resObj = {
       avgRating: 5.0,
       avgPrice: 200,
       distance: "1.8 km",
-      timeToPrepare: "20 mins",
+      timeToPrepare: "15-20 mins",
       place: "Thergaon",
-      cuisines: ["Bakery", "Cakes"],
+      cuisines: ["Bakery", ", Cakes"],
       menu: [
         {
           id: 401,
@@ -328,9 +328,9 @@ const resObj = {
       avgRating: 4.8,
       avgPrice: 200,
       distance: "1.8 km",
-      timeToPrepare: "20 mins",
+      timeToPrepare: "40-45 mins",
       place: "Thergaon",
-      cuisines: ["Biryani", "Kebabs"],
+      cuisines: ["Biryani", ", Kebabs"],
       menu: [
         {
           id: 401,
@@ -392,7 +392,7 @@ const resObj = {
       avgRating: 1.6,
       avgPrice: 250,
       distance: "4.8 km",
-      timeToPrepare: "20 mins",
+      timeToPrepare: "25-30 mins",
       place: "Thergaon",
       cuisines: ["Kathi Rolls"],
       menu: [
@@ -456,9 +456,265 @@ const resObj = {
       avgRating: 4.7,
       avgPrice: 400,
       distance: "6.8 km",
-      timeToPrepare: "20 mins",
+      timeToPrepare: "15-20 mins",
       place: "Wakad",
       cuisines: ["Cafe, Snacks"],
+      menu: [
+        {
+          id: 401,
+          name: "Whopper",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/11/29/dc90cc06-f883-430d-be4b-75141c8064d9_6b832721-694c-4df4-96f0-308388144da0.jpg",
+          price: 199,
+          rating: 4.5,
+          orderedCount: 6800,
+          prepTime: 15,
+        },
+        {
+          id: 402,
+          name: "Veg Whopper",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/7/5/ad7622d7-ea12-428d-8803-3bd9f9da190e_2e7ae0e7-8b22-446d-9d65-4c96ec3df716.jpg",
+          price: 179,
+          rating: 4.3,
+          orderedCount: 5200,
+          prepTime: 11,
+        },
+        {
+          id: 403,
+          name: "Chicken Wing Fried",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/19/0879980b-5f95-459b-b995-48d42143a3c6_aab3a5ad-b4be-45fe-b5ab-a9bae30d64af.jpg",
+          price: 149,
+          rating: 4.2,
+          orderedCount: 4600,
+          prepTime: 15,
+        },
+        {
+          id: 404,
+          name: "Crispy Veg Burger",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/11/20/4389cb8d-93e5-4dd5-8013-73a927dd6b31_622133db-f6cc-4f88-ba37-118df0b143ce.jpg",
+          price: 59,
+          rating: 4.0,
+          orderedCount: 9300,
+          prepTime: 10,
+        },
+        {
+          id: 405,
+          name: "Chocolate Shake",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/19/cddbd1f0-c2fc-4af3-a108-b482cc0027e2_0564277b-594b-4aa9-a7cd-6796803092fc.jpg",
+          price: 139,
+          rating: 4.4,
+          orderedCount: 3900,
+          prepTime: 5,
+        },
+      ],
+    },
+    {
+      id: 9,
+      name: "Goila's Butter Chicken",
+      image:
+        "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/1/29/2c3ba127-a288-4a25-935a-5dca51e13764_970494.jpg",
+      avgRating: 4,
+      avgPrice: 400,
+      distance: "6.8 km",
+      timeToPrepare: "35-40 mins",
+      place: "Pimpiri",
+      cuisines: ["North Indian, Biryani"],
+      menu: [
+        {
+          id: 401,
+          name: "Whopper",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/11/29/dc90cc06-f883-430d-be4b-75141c8064d9_6b832721-694c-4df4-96f0-308388144da0.jpg",
+          price: 199,
+          rating: 4.5,
+          orderedCount: 6800,
+          prepTime: 15,
+        },
+        {
+          id: 402,
+          name: "Veg Whopper",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/7/5/ad7622d7-ea12-428d-8803-3bd9f9da190e_2e7ae0e7-8b22-446d-9d65-4c96ec3df716.jpg",
+          price: 179,
+          rating: 4.3,
+          orderedCount: 5200,
+          prepTime: 11,
+        },
+        {
+          id: 403,
+          name: "Chicken Wing Fried",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/19/0879980b-5f95-459b-b995-48d42143a3c6_aab3a5ad-b4be-45fe-b5ab-a9bae30d64af.jpg",
+          price: 149,
+          rating: 4.2,
+          orderedCount: 4600,
+          prepTime: 15,
+        },
+        {
+          id: 404,
+          name: "Crispy Veg Burger",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/11/20/4389cb8d-93e5-4dd5-8013-73a927dd6b31_622133db-f6cc-4f88-ba37-118df0b143ce.jpg",
+          price: 59,
+          rating: 4.0,
+          orderedCount: 9300,
+          prepTime: 10,
+        },
+        {
+          id: 405,
+          name: "Chocolate Shake",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/19/cddbd1f0-c2fc-4af3-a108-b482cc0027e2_0564277b-594b-4aa9-a7cd-6796803092fc.jpg",
+          price: 139,
+          rating: 4.4,
+          orderedCount: 3900,
+          prepTime: 5,
+        },
+      ],
+    },
+    {
+      id: 10,
+      name: "Firangi Bake",
+      image:
+        "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/9/3/cc1d4c98-c5f5-4294-9908-716c8f3dd87c_33937.jpg",
+      avgRating: 3.5,
+      avgPrice: 400,
+      distance: "2.8 km",
+      timeToPrepare: "30-35 mins",
+      place: "Pimple Saudagar",
+      cuisines: ["Pizzas, Pastas, Italian, Mexican"],
+      menu: [
+        {
+          id: 401,
+          name: "Whopper",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/11/29/dc90cc06-f883-430d-be4b-75141c8064d9_6b832721-694c-4df4-96f0-308388144da0.jpg",
+          price: 199,
+          rating: 4.5,
+          orderedCount: 6800,
+          prepTime: 15,
+        },
+        {
+          id: 402,
+          name: "Veg Whopper",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/7/5/ad7622d7-ea12-428d-8803-3bd9f9da190e_2e7ae0e7-8b22-446d-9d65-4c96ec3df716.jpg",
+          price: 179,
+          rating: 4.3,
+          orderedCount: 5200,
+          prepTime: 11,
+        },
+        {
+          id: 403,
+          name: "Chicken Wing Fried",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/19/0879980b-5f95-459b-b995-48d42143a3c6_aab3a5ad-b4be-45fe-b5ab-a9bae30d64af.jpg",
+          price: 149,
+          rating: 4.2,
+          orderedCount: 4600,
+          prepTime: 15,
+        },
+        {
+          id: 404,
+          name: "Crispy Veg Burger",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/11/20/4389cb8d-93e5-4dd5-8013-73a927dd6b31_622133db-f6cc-4f88-ba37-118df0b143ce.jpg",
+          price: 59,
+          rating: 4.0,
+          orderedCount: 9300,
+          prepTime: 10,
+        },
+        {
+          id: 405,
+          name: "Chocolate Shake",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/19/cddbd1f0-c2fc-4af3-a108-b482cc0027e2_0564277b-594b-4aa9-a7cd-6796803092fc.jpg",
+          price: 139,
+          rating: 4.4,
+          orderedCount: 3900,
+          prepTime: 5,
+        },
+      ],
+    },
+    {
+      id: 11,
+      name: "The Belgian Waffle Co.",
+      image:
+        "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/16/f46f5b89-c1dc-4b01-becc-ea27e3443e03_48041.jpg",
+      avgRating: 4.3,
+      avgPrice: 249,
+      distance: "2.5 km",
+      timeToPrepare: "25-30 mins",
+      place: "Pimple Saudagar",
+      cuisines: ["Waffle, Dessert, Icecream"],
+      menu: [
+        {
+          id: 401,
+          name: "Whopper",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/11/29/dc90cc06-f883-430d-be4b-75141c8064d9_6b832721-694c-4df4-96f0-308388144da0.jpg",
+          price: 199,
+          rating: 4.5,
+          orderedCount: 6800,
+          prepTime: 15,
+        },
+        {
+          id: 402,
+          name: "Veg Whopper",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/7/5/ad7622d7-ea12-428d-8803-3bd9f9da190e_2e7ae0e7-8b22-446d-9d65-4c96ec3df716.jpg",
+          price: 179,
+          rating: 4.3,
+          orderedCount: 5200,
+          prepTime: 11,
+        },
+        {
+          id: 403,
+          name: "Chicken Wing Fried",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/19/0879980b-5f95-459b-b995-48d42143a3c6_aab3a5ad-b4be-45fe-b5ab-a9bae30d64af.jpg",
+          price: 149,
+          rating: 4.2,
+          orderedCount: 4600,
+          prepTime: 15,
+        },
+        {
+          id: 404,
+          name: "Crispy Veg Burger",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/11/20/4389cb8d-93e5-4dd5-8013-73a927dd6b31_622133db-f6cc-4f88-ba37-118df0b143ce.jpg",
+          price: 59,
+          rating: 4.0,
+          orderedCount: 9300,
+          prepTime: 10,
+        },
+        {
+          id: 405,
+          name: "Chocolate Shake",
+          image:
+            "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/4/19/cddbd1f0-c2fc-4af3-a108-b482cc0027e2_0564277b-594b-4aa9-a7cd-6796803092fc.jpg",
+          price: 139,
+          rating: 4.4,
+          orderedCount: 3900,
+          prepTime: 5,
+        },
+      ],
+    },
+    {
+      id: 12,
+      name: "Mad Over Donuts",
+      image:
+        "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/12/16/be1d54a8-3212-4704-9d6d-52f2ab639111_245574.JPG",
+      avgRating: 4.4,
+      avgPrice: 349,
+      distance: "3.5 km",
+      timeToPrepare: "35-45 mins",
+      place: "Chinchwad",
+      cuisines: ["Desserts, Sweets, Bakery"],
       menu: [
         {
           id: 401,

@@ -23,12 +23,9 @@ const RestaurantCard = (props) => {
         ></i>
         &nbsp;{avgRating} • {timeToPrepare}
       </p>
+      <p>{cuisines}</p>
       <p>
-        {cuisines.join(",")} | {place}
-      </p>
-      <p>
-        <i className="fa fa-map-marker map" aria-hidden="true"></i>{" "}
-        {resData.distance}
+        {place} • {resData.distance}
       </p>
     </div>
   );
