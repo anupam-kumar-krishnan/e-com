@@ -2,15 +2,34 @@ import MobileSection from "./MobileSection";
 import HeroSection from "./HeroSection";
 import RestaurantCard from "./ResturantCard";
 import resObj from "../utils/mockData";
-import react, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+
+const API_URL = "https://namastedev.com/api/v1/listRestaurants";
 
 const Body = () => {
   // State Variable - Super Powerful Variable
-  let [listofRestaurants, setListofRestaurants] = useState(resObj.restaurants);
+  const [listOfRestaurants, setListOfRestaurants] = useState([]);
 
   useEffect(() => {
-    console.log("useEffect Called");
+    fetchData();
   }, []);
+
+  const fetchData = async () => {
+    const res = await fetch(API_URL);
+    const json = await res.json();
+
+    console.log(json);
+
+    const restaurants =
+      json?.data?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants;
+
+    setListOfRestaurants(restaurants || []);
+  };
+
+  if (listOfRestaurants.length === 0) {
+    return <div className="loader"></div>;
+  }
 
   return (
     <div className="body">
@@ -98,26 +117,25 @@ const Body = () => {
         </div>
       </div>
       <HeroSection />
-      <div className="filter">
+      {/* <div className="filter">
         <button
           className="filter-btn"
           onClick={() => {
             // filter logic here
 
-            const filteredList = listofRestaurants.filter(
-              (resObj) => resObj.avgRating > 4
+            const filteredList = listOfRestaurants.filter(
+              (res) => res.info.avgRating > 4
             );
-            setListofRestaurants(filteredList);
+            setListOfRestaurants(filteredList);
           }}
         >
           Top Rated Restaurants
-        </button>
-      </div>
+        </button> 
+      </div> */}
       <div className="res-container">
         <h3 className="heading">Top restaurant chains in Pune</h3>
         <div className="res-cards">
-          {/* resObj.restaurants */}
-          {listofRestaurants.map((restaurant) => (
+          {resObj.restaurants.map((restaurant) => (
             <RestaurantCard key={restaurant.id} resData={restaurant} />
           ))}
         </div>
